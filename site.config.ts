@@ -9,12 +9,12 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  name: `Unot's Blog`,
+  domain: 'unot.net',
   author: '屋落',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'Unot, 屋落的博客',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
@@ -50,8 +50,8 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
   // navigationLinks: [
   //   {
   //     title: 'About',

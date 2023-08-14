@@ -4,9 +4,18 @@ import * as types from 'notion-types'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import cs from 'classnames'
-import { Breadcrumbs, Header, Search, useNotionContext } from 'react-notion-x'
+import {
+  Breadcrumbs,
+  Header,
+  // Search,
+  useNotionContext
+} from 'react-notion-x'
 
-import { isSearchEnabled, navigationLinks, navigationStyle } from '@/lib/config'
+import {
+  // isSearchEnabled,
+  navigationLinks,
+  navigationStyle
+} from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
@@ -25,6 +34,7 @@ const ToggleThemeButton = () => {
 
   return (
     <div
+      style={{fontSize: '18px'}}
       className={cs('breadcrumb', 'button', !hasMounted && styles.hidden)}
       onClick={onToggleTheme}
     >
@@ -46,7 +56,6 @@ export const NotionPageHeader: React.FC<{
     <header className='notion-header'>
       <div className='notion-nav-header'>
         <Breadcrumbs block={block} rootOnly={true} />
-
         <div className='notion-nav-header-rhs breadcrumbs'>
           {navigationLinks
             ?.map((link, index) => {
@@ -80,7 +89,7 @@ export const NotionPageHeader: React.FC<{
 
           <ToggleThemeButton />
 
-          {isSearchEnabled && <Search block={block} title={null} />}
+          {/*{isSearchEnabled && <Search block={block} title={null} />}*/}
         </div>
       </div>
     </header>

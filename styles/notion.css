@@ -17,6 +17,7 @@
 }
 
 .notion-page {
+  width: 900px;
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
 }
@@ -44,8 +45,12 @@
 }
 
 .notion-header .notion-nav-header {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
+}
+
+.notion-header .notion-search-button {
+  /*display: none;*/
 }
 
 .notion-nav-header-rhs {
